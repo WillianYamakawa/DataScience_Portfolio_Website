@@ -1,0 +1,25 @@
+:root{
+    --primary-font: "SourceSansPro", sans-serif;
+    --secondary-font: "Poppins", sans-serif;
+    --logo-font: 'Staatliches', cursive;
+    --brand: #cb1e40;
+    --common-box-shadow: 0 0 10px 5px rgba(222, 222, 222, 0.5);
+    --darker-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    --white: #ffffff;
+    --rgb-black: 0, 0, 0;
+    --common-text: #303030;
+    --disabled: #6C757D;
+    --light-gray: #d9d9d9;
+    --background: #f5f5f5;
+    --primary: #4349B5;
+    --primary-dark: #1B207B;
+    --primary-light: #E5E6FD;
+    --success: #00823F;
+    --success-light: #E3F8EA;
+    --warning: #EA752E;
+    --warning-light: #FFEEE3;
+    --info: #3674E6;
+    --info-light: #CAE1FF;
+    --danger: #D53F25;
+    --danger-light: #FFE4E3;
+}

@@ -1,0 +1,11 @@
+h1{
+    font-family: var(--logo-font);
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 10px;
+    color: #424A60
+}
+
+#logo{
+    margin-left: 15px;
+}
