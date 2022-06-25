@@ -17,7 +17,7 @@ h1{
 
 nav{
     box-shadow: var(--darker-box-shadow);
-    align-items: center;
+    justify-content: center;
 }
 
 #logo-div{
