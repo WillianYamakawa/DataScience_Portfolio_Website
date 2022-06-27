@@ -1,4 +1,5 @@
-let fileurl = window.location.hash.replace("#/", "");
+const urlParams = new URLSearchParams(window.location.search);
+const fileurl = urlParams.get('page');
 
 if(fileurl === ""){
 	document.getElementById("content").innerHTML = '<h1 class="title loading">Site inexistente</h1>'
