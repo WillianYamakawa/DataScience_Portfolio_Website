@@ -1,7 +1,7 @@
 const urlParams = new URLSearchParams(window.location.search);
 const fileurl = urlParams.get('page');
-
-if(fileurl === undefined){
+console.log(fileurl)
+if(fileurl === null){
 	document.getElementById("content").innerHTML = '<h1 class="title loading">Site inexistente</h1>'
 }else{
 	getHtml(fileurl)
