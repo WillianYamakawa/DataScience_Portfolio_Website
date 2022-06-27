@@ -22,8 +22,7 @@ h1#logo {
 }
 
 .title{
-    font-family: var(--logo-font); font-weight: bold;
-    letter-spacing: 2px;
+    font-size: 40px;
 }
 
 h1, h2{
@@ -67,6 +66,7 @@ figure{
 }
 
 hr{
+    margin-top: 20px;
     border: 0;
     height: 1px;
     background-image: linear-gradient(
@@ -83,19 +83,15 @@ hr{
 }
 
 .stick{
-    font-size: 15px;
+    font-size: 12px;
     background-color: var(--primary);
     color: white;
-    padding: 5px 20px;
-    border-radius: 10px;
+    padding: 3px 10px;
+    border-radius: 16px;
     vertical-align: middle;
     letter-spacing: 2px;
     margin-left: 10px;
 
-}
-
-.stick.min{
-    font-size: 10px;
 }
 
 
@@ -129,39 +125,32 @@ nav {
 }
 
 .main .content{
-    width: 60%;
+    width: 50%;
+    min-height: 74vh;
+}
+a{
+    color: var(--info)
 }
 
 footer{
     border-top: var(--border-low);
     margin-top: 20px;
-    padding-top: 20px;
+    padding-top: 15px;
+    padding-bottom: 10px;
     display: flex;
     justify-content: space-between;
-    padding: 0px 50px;
+    width: 100%;
 }
 
 .loading{
-    display: flex;
-    justify-content: center;
-    margin-top: 10vh;
-    margin-bottom: 20vh;
-    width: 300px;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
 }
 
-.loader {
-    border: 16px solid #f3f3f3; /* Light grey */
-    border-top: 16px solid #3498db; /* Blue */
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    animation: spin 2s linear infinite;
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
+
+
 
 @media (max-width: 900px){
     .main .content{
@@ -172,6 +161,9 @@ footer{
         margin-right: 30px;
     }
     .duo{
+        flex-direction: column;
+    }
+    footer{
         flex-direction: column;
     }
 }
