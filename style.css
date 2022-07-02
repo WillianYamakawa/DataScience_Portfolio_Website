@@ -152,14 +152,12 @@ nav {
 }
 
 .main {
-    display: flex;
     justify-content: center;
     margin-top: 30px;
 }
 
 .main .content{
     width: 50vw;
-    min-width: 50vw;
     min-height: 74vh;
     border-left: 1px solid #d3d3d3;
     border-right: 1px solid #d3d3d3;
@@ -186,16 +184,6 @@ footer{
     transform: translate(-50%, -50%);
 }
 
-.ad{
-    display: flex;
-    justify-content: center;
-}
-.ad1{
-    margin-right: 30px;
-}
-.ad2{
-    margin-left: 30px;
-}
 
 
 @media (max-width: 900px){
@@ -229,13 +217,5 @@ footer{
     }
     .main{
         margin-top: 0;
-        flex-direction: column;
-    }
-    .ad1{
-        margin-top: 30px;
-    }
-    .ad2{
-        margin-top: 30px;
-        margin-bottom: 30px;
     }
 }
