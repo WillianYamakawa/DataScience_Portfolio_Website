@@ -1,3 +1,10 @@
+if(isDarkMode()){
+	var root = document.querySelector(':root');
+	root.style.setProperty('--border-low', 'lightblue');
+	root.style.setProperty('--variable', 'lightblue');
+	root.style.setProperty('--variable', 'lightblue');
+}
+
 const urlParams = new URLSearchParams(window.location.search);
 const fileurl = urlParams.get('page');
 console.log(fileurl)
@@ -23,4 +30,12 @@ fetch(file)
 	.catch((err) => {
         
     });
+}
+
+function isDarkMode(){
+	return localStorage.getItem('darkMode') == 'dark' ? 'dark' : 'light'
+}
+
+function setDarkMode(value){
+	localStorage.setItem('darkMode', value)
 }
